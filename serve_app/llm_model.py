@@ -29,7 +29,7 @@ class Llm:
             chat, tokenize=True, add_generation_prompt=True, return_tensors="pt"
         ).to(self.model.device)
 
-        outputs = await self.model.generate(
+        outputs = self.model.generate(
             input_ids,
             **generation_config
         )
