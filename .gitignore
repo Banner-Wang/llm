@@ -1,1 +1,2 @@
-/ray-service.modelserve.llama3.image.yaml
+.env*
+__pycache__/
